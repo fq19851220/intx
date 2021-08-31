@@ -11,3 +11,5 @@
 #define EXTRACT64(X) \
     ((uint64_t)(uint32_t)_mm_cvtsi128_si32(X) | \
     ((uint64_t)(uint32_t)_mm_cvtsi128_si32(HI32(X)) << 32))
+
+static uint64_t _umul128(uint64_t multiplier, uint64_t multiplicand, uint64_t* product_hi);
