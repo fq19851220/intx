@@ -1,7 +1,7 @@
 #pragma once
 #include "umul128.h"
 
-static inline uint64_t __umul128(uint64_t multiplier, uint64_t multiplicand, uint64_t* product_hi) {
+static inline uint64_t _umul128(uint64_t multiplier, uint64_t multiplicand, uint64_t* product_hi) {
     // multiplier   = ab = a * 2^32 + b
     // multiplicand = cd = c * 2^32 + d
     // ab * cd = a * c * 2^64 + (a * d + b * c) * 2^32 + b * d
