@@ -94,7 +94,7 @@ macro(cable_configure_compiler)
             string(REPLACE " /W3" "" CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
 
             # Enable basing warnings set and treat them as errors.
-            add_compile_options(/W4 /WX)
+            #add_compile_options(/W4 /WX)
 
             # Allow unknown pragmas, we don't want to wrap them with #ifdefs.
             add_compile_options(/wd4068)
